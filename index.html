@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRSKM | Risk In Every Motion</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <h1 class="preloader-logo">DRSKM</h1>
+            <p class="preloader-slogan">Risk In Every Motion.</p>
+            <div class="preloader-bar-track">
+                <div class="preloader-bar-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="logo">DRSKM</div>
+        <nav class="desktop-nav">
+            <a href="#home">Home</a>
+            <a href="#shop">Shop</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#faq">FAQ</a>
+        </nav>
+        <div class="nav-icons">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-regular fa-heart"></i>
+            <div class="cart-icon" id="cart-toggle">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span class="cart-badge">0</span>
+            </div>
+            <button type="button" class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="mobile-nav-backdrop" id="mobile-nav-backdrop"></div>
+    <nav class="mobile-nav-menu" id="mobile-nav-menu">
+        <a href="#home" class="mobile-nav-link">Home</a>
+        <a href="#shop" class="mobile-nav-link">Shop</a>
+        <a href="#about" class="mobile-nav-link">About</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
+        <a href="#faq" class="mobile-nav-link">FAQ</a>
+    </nav>
+
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h2>YOUR CART</h2>
+            <i class="fa-solid fa-xmark close-cart" id="close-cart"></i>
+        </div>
+        <div class="cart-items" id="cart-items-container">
+            <!-- Dynamic cart items load here -->
+        </div>
+        <div class="cart-footer">
+            <button class="btn-primary checkout-btn" id="checkout-btn">CHECKOUT</button>
+        </div>
+    </div>
+
+    <section id="home" class="hero">
+        <div class="hero-content fade-in">
+            <a href="#shop" class="btn-primary">SHOP NOW</a>
+        </div>
+    </section>
+
+    <section id="shop" class="shop-section">
+        <h2 class="section-title">Drop 001: Identity</h2>
+        <div class="product-grid">
+            
+            <!-- Identity Tee -->
+            <div class="product-card fade-in-on-scroll" id="product-identity">
+                <div class="product-image">
+                    <div class="image-wrapper scale-in-on-scroll">
+                        <img src="images/1000541247.jpg" alt="Identity Tee Black Front" class="product-display-img active">
+                    </div>
+                    <div class="wishlist-btn"><i class="fa-regular fa-heart"></i></div>
+                    
+                    <div class="view-toggle-container">
+                        <button class="view-toggle-btn active" data-view="front">Front</button>
+                        <button class="view-toggle-btn" data-view="back">Back</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Identity Tee</h3>
+                    <div class="price-block">
+                        <p class="price">₦80,000</p>
+                        <span class="price-usd">≈ $58 USD</span>
+                    </div>
+                    <p class="product-description">The DRSKM Identity Tee is crafted from premium cotton with an oversized fit for everyday comfort and effortless style. Designed with a minimalist aesthetic and finished with signature DRSKM branding, it represents confidence, purpose, and the courage to move forward. Every piece is made for those who believe that every meaningful journey begins with a risk.</p>
+                    <div class="product-meta">
+                        <div class="meta-group">
+                            <span class="meta-label">Sizes:</span>
+                            <div class="size-selector">
+                                <span class="size-option active">L</span>
+                                <span class="size-option">XL</span>
+                            </div>
+                        </div>
+                        <div class="meta-group">
+                            <span class="meta-label">Colors:</span>
+                            <div class="color-selector">
+                                <span class="color-option color-black active" data-color="black" title="Black"></span>
+                                <span class="color-option color-white" data-color="white" title="White"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-outline add-to-cart">ADD TO CART</button>
+                </div>
+            </div>
+
+            <!-- The Oath Tee -->
+            <div class="product-card fade-in-on-scroll" id="product-oath">
+                <div class="product-image">
+                    <div class="image-wrapper scale-in-on-scroll">
+                        <img src="images/1000541251.jpg" alt="The Oath Tee Black Front" class="product-display-img active">
+                    </div>
+                    <div class="wishlist-btn"><i class="fa-regular fa-heart"></i></div>
+                    
+                    <div class="view-toggle-container">
+                        <button class="view-toggle-btn active" data-view="front">Front</button>
+                        <button class="view-toggle-btn" data-view="back">Back</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">The Oath Tee</h3>
+                    <div class="price-block">
+                        <p class="price">₦80,000</p>
+                        <span class="price-usd">≈ $58 USD</span>
+                    </div>
+                    <p class="product-description">The DRSKM Identity Tee is crafted from premium cotton with an oversized fit for everyday comfort and effortless style. Designed with a minimalist aesthetic and finished with signature DRSKM branding, it represents confidence, purpose, and the courage to move forward. Every piece is made for those who believe that every meaningful journey begins with a risk.</p>
+                    <div class="product-meta">
+                        <div class="meta-group">
+                            <span class="meta-label">Sizes:</span>
+                            <div class="size-selector">
+                                <span class="size-option active">L</span>
+                                <span class="size-option">XL</span>
+                            </div>
+                        </div>
+                        <div class="meta-group">
+                            <span class="meta-label">Colors:</span>
+                            <div class="color-selector">
+                                <span class="color-option color-black active" data-color="black" title="Black"></span>
+                                <span class="color-option color-white" data-color="white" title="White"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-outline add-to-cart">ADD TO CART</button>
+                </div>
+            </div>
+
+        </div>
+
+        <p class="currency-disclaimer">USD prices are approximate and based on the current exchange rate. Final payment is processed in Nigerian Naira (₦), and your bank or payment provider may apply its own exchange rate or fees.</p>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="about-header-block fade-in-on-scroll">
+                <span class="about-subtitle">THE IDENTITY</span>
+                <h2>ABOUT DRSKM</h2>
+                <p class="brand-slogan">Risk In Every Motion.</p>
+            </div>
+
+            <div class="about-divider"></div>
+
+            <div class="about-story-grid">
+                <div class="story-column">
+                    <h3 class="about-section-heading fade-in-on-scroll">About the Brand</h3>
+                    <p class="about-body-text fade-in-on-scroll">DRSKM is more than clothing, it’s a mindset. Built for those who refuse to wait for permission, DRSKM represents courage, ambition, and movement. The name is inspired by the word “Risk,” because every meaningful journey begins with the decision to step into the unknown. Every design tells a story of resilience, self-belief, and determination. We create premium streetwear for people who move with purpose and aren’t afraid to stand out. Our mission is to inspire a generation that creates opportunities instead of waiting for them. At DRSKM, every risk becomes part of your identity.</p>
+                </div>
+                
+                <div class="story-column">
+                    <h3 class="about-section-heading fade-in-on-scroll">What Does DRSKM Stand For?</h3>
+                    <p class="about-body-text fade-in-on-scroll">DRSKM comes from the word Risk, with the vowels removed to create a bold and memorable identity. It represents taking risks, embracing uncertainty, and moving with purpose.</p>
+                </div>
+            </div>
+
+            <div class="about-divider"></div>
+
+            <div class="about-mission-block">
+                <h3 class="about-section-heading fade-in-on-scroll">Mission</h3>
+                <p class="about-body-text large-emphasis fade-in-on-scroll">To inspire people to embrace risk, move with purpose, and express confidence through timeless fashion that reflects courage, ambition, and individuality.</p>
+            </div>
+
+            <div class="about-divider"></div>
+
+            <div class="about-story-grid">
+                <div class="story-column">
+                    <h3 class="about-section-heading fade-in-on-scroll">What Makes DRSKM Different?</h3>
+                    <p class="about-body-text fade-in-on-scroll">DRSKM is more than a fashion brand, it’s a philosophy. Every collection is inspired by the belief that growth begins with taking risks. Rather than chasing trends, we create timeless, versatile pieces that represent confidence, discipline, and purposeful living. Every garment carries a story, reminding those who wear it that every meaningful journey begins with a single decision.</p>
+                </div>
+
+                <div class="story-column">
+                    <h3 class="about-section-heading fade-in-on-scroll">Why Did I Start DRSKM?</h3>
+                    <p class="about-body-text fade-in-on-scroll">I started DRSKM because I wanted to build more than a clothing brand, I wanted to create a movement. I believe every dream begins with the courage to take a risk, and DRSKM is a reflection of that belief. Through fashion, I want to inspire people to move boldly, trust their vision, and create opportunities instead of waiting for them.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="faq-section">
+        <div class="faq-container">
+            <h2 class="section-title">FAQ</h2>
+            <div class="faq-item fade-in-on-scroll">
+                <h3>When is the next drop?</h3>
+                <p>Sign up for our newsletter below to receive immediate notifications and early-access passcodes for all upcoming seasonal drops.</p>
+            </div>
+            <div class="faq-item fade-in-on-scroll">
+                <h3>How do I place an order?</h3>
+                <p>Browse the collection, choose your preferred color and size, add the item to your cart, then click Checkout. You will be redirected to WhatsApp with your order details already filled in. Our team will confirm your order, payment and delivery.</p>
+            </div>
+            <div class="faq-item fade-in-on-scroll">
+                <h3>How does WhatsApp Checkout work?</h3>
+                <p>Our website securely prepares your order and sends it directly to our WhatsApp Business chat. This allows us to personally confirm product availability, payment and delivery before processing your order.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter fade-in-on-scroll">
+        <h2>JOIN THE ARCHIVE</h2>
+        <p>Subscribe for exclusive drops, early access, and brand updates.</p>
+        <form class="newsletter-form">
+            <input type="email" placeholder="EMAIL ADDRESS" required>
+            <button type="submit" class="btn-primary">SUBSCRIBE</button>
+        </form>
+    </section>
+
+    <section id="contact" class="contact-section fade-in-on-scroll">
+        <div class="contact-container">
+            <span class="contact-kicker">CONTACT</span>
+            <h2 class="contact-heading">Let's Talk.</h2>
+            <p class="contact-intro">Whether it's wholesale orders, collaborations, press enquiries, or custom pieces, we'd love to hear from you.</p>
+
+            <div class="contact-info-block">
+                <div class="contact-info-item">
+                    <span class="info-label">EMAIL</span>
+                    <a href="mailto:realdrskm@gmail.com" class="info-value">realdrskm@gmail.com</a>
+                </div>
+                <div class="contact-info-item">
+                    <span class="info-label">PHONE</span>
+                    <a href="tel:+2349130131222" class="info-value">+234 913 013 1222</a>
+                </div>
+                <div class="contact-info-item">
+                    <span class="info-label">TIKTOK</span>
+                    <a href="https://www.tiktok.com/@realdrskm" target="_blank" class="info-value">@realdrskm</a>
+                </div>
+                <div class="contact-info-item">
+                    <span class="info-label">SNAPCHAT</span>
+                    <a href="https://www.snapchat.com/add/Realdrskm" target="_blank" class="info-value">Realdrskm</a>
+                </div>
+            </div>
+
+            <p class="contact-subtitle">A response is typically provided within 24-48 hours.</p>
+        </div>
+    </section>
+
+    <footer class="footer-fade-in">
+        <div class="footer-brand">
+            <h4>DRSKM</h4>
+            <p>Risk In Every Motion.</p>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 DRSKM. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="toast-container" id="toast-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
