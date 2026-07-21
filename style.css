@@ -583,17 +583,25 @@ body.no-scroll {
     z-index: 10;
 }
 
-.view-toggle-container {
+/* Product Controls Overlay (Front/Back Toggle + Color Selector) */
+.product-controls-overlay {
     position: absolute;
     bottom: 15px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    z-index: 10;
+}
+
+.view-toggle-container {
+    display: flex;
     gap: 1px;
     background: rgba(0, 0, 0, 0.75);
     border: 1px solid var(--border-color);
     backdrop-filter: blur(5px);
-    z-index: 10;
     padding: 3px;
 }
 
@@ -618,6 +626,41 @@ body.no-scroll {
 .view-toggle-btn.active {
     background-color: var(--accent);
     color: var(--accent-invert);
+}
+
+.color-selector {
+    display: flex;
+    gap: 10px;
+    background: rgba(0, 0, 0, 0.75);
+    border: 1px solid var(--border-color);
+    backdrop-filter: blur(5px);
+    padding: 6px 14px;
+    border-radius: 20px;
+}
+
+.color-option {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+    transition: var(--transition);
+    position: relative;
+}
+
+.color-option.active {
+    border-color: var(--accent);
+    transform: scale(1.15);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+}
+
+.color-black {
+    background-color: #000000;
+}
+
+.color-white {
+    background-color: #ffffff;
 }
 
 .product-info {
@@ -710,35 +753,6 @@ body.no-scroll {
     border-color: var(--accent);
     background: var(--accent);
     color: var(--accent-invert);
-}
-
-.color-selector {
-    display: flex;
-    gap: 8px;
-}
-
-.color-option {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    border: 1px solid var(--border-color);
-    cursor: pointer;
-    transition: var(--transition);
-    position: relative;
-}
-
-.color-option.active {
-    border-color: var(--accent);
-    transform: scale(1.1);
-}
-
-.color-black {
-    background-color: #000000;
-}
-
-.color-white {
-    background-color: #ffffff;
 }
 
 .about-section {
