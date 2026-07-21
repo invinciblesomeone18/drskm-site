@@ -195,8 +195,22 @@ h1, h2, h3, h4 {
 
 .section-title {
     text-align: center;
-    margin: 4rem 0 2rem;
+    margin: 4rem 0 0.5rem;
     font-size: 2rem;
+}
+
+.shop-header {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.collection-tagline {
+    font-size: 0.95rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    margin-top: 0.4rem;
 }
 
 .btn-primary, .btn-outline {
